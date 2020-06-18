@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useReducer} from 'react';
 import './App.css';
 import Parent from './parent';
 import ValueContext from './ValueContext';
 
 function App() {  
-  let value = useState(81);
+  let value = useState(81);  
   return (
     <ValueContext.Provider value={value}>
     <div className="App">
